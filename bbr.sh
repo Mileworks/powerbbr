@@ -101,7 +101,7 @@ startbbr(){
     	depmod -a
     	modprobe tcp_tsunami
 	rm -rf /etc/sysctl.conf
-	wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/sysctl.conf
+	wget -O /etc/sysctl.conf -N --no-check-certificate https://raw.githubusercontent.com/goodshell/powerbbr/master/sysctl.conf
 	sysctl -p
     cd .. && rm -rf $dir/tsunami
 	echo "魔改版BBR启动成功！"
